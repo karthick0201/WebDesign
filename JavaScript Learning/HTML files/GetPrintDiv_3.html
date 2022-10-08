@@ -1,0 +1,44 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Execise_3</title>
+        <script src="GetPrintDivJS_3.js"></script>
+    </head>
+    <body style="text-align: center; background-color: mediumturquoise;">
+        <h2>Get And Print Particular Div </h2><br><br>
+        <label for="">Id : </label><input type="text" placeholder="Enter Your Id"><br><br>
+        <div id="mydiv">
+            <label for="">Name : </label><input type="text" placeholder="Enter Your Name "><br><br>
+            <label for="">Mobile Number : </label><input type="text" placeholder="Enter Mobile Number "><br><br>
+            <label for="">Age</label> <input type="text" placeholder="Enter Your Age"><br><br>
+        </div>
+        <br><button onclick="check()">Submit</button><br>
+        <p> </p>
+        <p> </p>
+        <p> </p>
+
+        <!------------------- JavaScript --------------------------->
+      <!-- //WITHOUT USING DIV  || EXAMPLE--> 
+        <!-- <script>
+            function check(){
+                box=document.getElementsByTagName("input");
+                data=document.getElementsByTagName("p");
+                for(i=0;i<box.length;i++){
+                    data[i].innerHTML = box[i].value;
+                }
+            }
+        </script>  -->
+
+        <!-- USING DIV  || EXAMPLE--> 
+        <script>
+            function check(){
+                area=document.getElementById("mydiv");
+                box=area.getElementsByTagName("input");
+                data=document.getElementsByTagName("p");
+                for(i=0;i<box.length;i++){
+                    data[i].innerHTML = box[i].value;
+                }
+            }
+        </script>  
+    </body>
+</html>

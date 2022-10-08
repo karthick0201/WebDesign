@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<HTML>
+    <head>
+        <title>Execise_1</title>
+        <script src="GetDataFromInputJS_1.js"></script>
+    </head>
+    <body style="text-align: center;">
+        <h2>Execise_1</h2>  
+        <label>Enter Name : </label>
+        <input type="text" id="from" placeholder="Enter Data"><br><br>
+        <button onclick="check()">Submit</button>
+        <p id="to">  </p>
+        <!-- ------------------------------------------------------ -->
+        <!--------------------------- JavaScript --------------------->
+        <script>
+            function check(){
+                data=document.getElementById("from").value;
+                document.getElementById("to").innerHTML=data;
+            }
+
+        </script>
+    </body>
+</HTML>

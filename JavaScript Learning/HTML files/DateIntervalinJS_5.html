@@ -1,0 +1,47 @@
+<!DOCHTML>
+<html>
+    <head>
+        <title>Date&Intervals</title>
+       <script src="/JavaScript Learning/JS Files/DateIntervalinJS_5.js"></script>
+    </head>
+    <body style="text-align: center; background-color: aquamarine;">
+        <h2>Date In JavaScript</h2><br><br>
+        <!-- <input type="text" placeholder="Nothing!!!"> -->
+       <p id="p1"> </p>
+
+        <button onclick="start()">start</button>
+        <button onclick="stop()">stop</button>
+
+        <script>
+           
+           function timeRun(){
+                date=new Date();
+                hour = date.getHours();
+                min = date.getMinutes();
+                second = date.getSeconds();
+                time=date.toLocaleTimeString();
+                // console.log(time);
+                x=document.getElementById("p1");
+                x.innerHTML=time;
+
+                //COLOR CHANGING CODE : 
+                if(second%2==0){
+                    x.style.color="purple";
+                }
+                else{
+                    x.style.color="orange";
+                }
+            }
+            function start(){
+            y= setInterval(timeRun,1000); //1000 mille seconds
+           }
+           function stop(){
+            clearInterval(y);
+           }
+           
+
+
+        </script>
+    </body>
+    </html>
+

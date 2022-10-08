@@ -1,0 +1,1 @@
+alert("Execise 2 \n Hello Peter!!!");
